@@ -1,0 +1,17 @@
+Main Colors for site:
+#F0F7D4 - Off-white
+#BBE524 - Greenish
+#FF230F - Red
+#2682A6 - Light Blueish
+#002C3D - Dark Blue - Menu
+
+
+Other Colors:
+#ffffff (white)
+#000000 (black)
+#808080 (gray)
+#004966 (Lighter Blue) - Menu, selected.
+#00121a (really dark blue) - Footer, top part
+#555555 (gray) - Used for header and footer box-shadows
+
+#ff5100 (orange) - Another Accent Color? This color may need to be edited.
