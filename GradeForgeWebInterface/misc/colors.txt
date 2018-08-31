@@ -14,4 +14,4 @@ Other Colors:
 #00121a (really dark blue) - Footer, top part
 #555555 (gray) - Used for header and footer box-shadows
 
-#ff5100 (orange) - Another Accent Color? This color may need to be edited.
+#ff5100 (orange) #fb9902 - Another Accent Color? This color may need to be edited.

@@ -12,10 +12,27 @@
       </div>
       <div id="menu">
         <ul>
-          <li><a href="https://google.com" class="current"> Home </a></li>
-          <li><span> Help </span></li>
+          <!-- For Dropdown Menus: the <li> element must be in class "dropdown" -->
+          <li class="dropdown">
+            <a href="https://google.com"> Home </a>
+            <div class="dropdownContent">
+              <p> Hello World </p>
+              <p> Hello World </p>
+              <p> This should be a Link! </p>
+              <a href="#"> Link! </a>
+            </div>
+          </li>
+          <li><span class="current"> Help </span></li>
           <li><span> About Us </span></li>
-          <li><span> ... </span></li>
+          <li class="dropdown">
+            <span> ... </span>
+            <div class="dropdownContent">
+              <p> Hello World </p>
+              <p> Hello World </p>
+              <p> This should be a Link! </p>
+              <a href="#"> Link! </a>
+            </div>
+          </li>
           <li><span> Lorem </span></li>
           <li><span> ipsum </span></li>
           <li><a href="https://duckduckgo.com"> Test Link </a></li>

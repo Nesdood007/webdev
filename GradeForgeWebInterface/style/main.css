@@ -59,28 +59,6 @@ header {
   margin: 0px 0px 5px 0px;
 }
 
-/* the Menu */
-header div#menu ul {
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-  text-align: center;
-  /* Make Elements Evelnly Spaced*/
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Menu section of Header */
-header div#menu {
-  display: block;
-  background-color: #002C3D;
-  font-size: 20px;
-  font-family: menu;
-}
-
 /* Title Section of Header */
 header div#title {
   text-align: center;
@@ -89,6 +67,40 @@ header div#title {
   margin: 0px;
   padding: 5px 0px;
   color: black;
+}
+
+header div#title h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+header div#title h1 span.color1 {
+  color: #2682A6;
+}
+
+header div#title h1 span.color0 {
+  color: black;
+}
+
+/* Menu section of Header */
+header div#menu ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  text-align: center;
+  /* Make Elements Evenly Spaced*/
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+
+header div#menu {
+  display: block;
+  background-color: #002C3D;
+  font-size: 20px;
+  font-family: menu;
 }
 
 /* Links in the Menu */
@@ -111,17 +123,11 @@ header li :not(a) {
   display: block;
   color: gray;
   padding: 10px 0px;
-  /*border-bottom: 5px solid #00FF00;*/
 }
 
 header ul li .current {
   background-color: #004966;
   border-bottom: 5px solid #BBE524;
-}
-
-header div#title h1 {
-  padding: 0px;
-  margin: 0px;
 }
 
 header ul li a:link {
@@ -142,15 +148,63 @@ header ul li a:active {
   color: white;
 }
 
-header div#title h1 span.color1 {
-  color: #2682A6;
-}
-
-header div#title h1 span.color0 {
-  color: black;
-}
-
 /* Dropdown Hover Menus */
+header div#menu .dropdown {
+  color: blue;
+}
+
+/* Keep Hover Effect Active while the Menu is open */
+header div#menu .dropdown:hover {
+  color: white;
+  background-color: #111111;
+  border-bottom: 0px;
+}
+/* Fix for Link Glitch */
+header div#menu .dropdown:hover > a {
+  color: white;
+  background-color: #111111;
+  border-bottom: 0px;
+}
+
+/* Makes the Drop-down Menu Appear */
+header div#menu .dropdown:hover .dropdownContent {
+  display: block;
+}
+
+header div#menu .dropdownContent {
+  display: none; /*none*/
+  position: absolute;
+  z-index: 1;
+  background-color: #F0F7D4;
+  min-width: 14.28%; /* Should change if Menu Element # changes */
+  min-height: 15px;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Selects any Element in the drop-down menu */
+header div#menu .dropdownContent * {
+  margin: 0px;
+  padding: 10px 0px;
+  color: black;
+  font-family: menu;
+  font-size: 15px;
+  display: block;
+  border-bottom: 0px;
+  border-left: 5px solid rgba(0,0,0,0.0);
+}
+
+header div#menu .dropdownContent a {
+  text-decoration: none;
+}
+
+header div#menu .dropdownContent a:hover {
+  background-color: #e2efa9;
+  border-left: 5px solid black;
+  border-bottom: 0px;
+}
 
 /* Content Block */
 main {
@@ -186,6 +240,7 @@ footer div#footer-top table dt {
   font-family: bold;
   font-size: 17px;
   margin: 0px 0px 5px 0px;
+  padding: 1px;
 }
 
 footer div#footer-top table dd {
@@ -248,7 +303,6 @@ footer div#footer-top .color2 a:hover{
   color: #111111;
 }
 
-
 /* NOTE: Experimental Orange Color */
 footer div#footer-top dt.color3 {
   color: #fb9902;
@@ -262,7 +316,6 @@ footer div#footer-top .color3 a:hover{
   background-color: #fb9902;
   color: #111111;
 }
-
 /* End Exp. Orange Color */
 
 footer div#footer-top table a:link {
@@ -285,7 +338,6 @@ footer div#footer-top table a:hover {
 footer div#footer-top table a:active {
   color: white;
 }
-
 
 footer div#footer-bottom {
   font-family: ultralight;
