@@ -56,7 +56,7 @@ body {
 /* Header Block: Title and Menu */
 header {
   box-shadow: 0px 5px 10px #555;
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 /* Title Section of Header */
@@ -115,7 +115,7 @@ header li > a {
 
 /* Menu Elements */
 header li {
-  float: left;
+  /*float: left;*/
   width: 20%; /* [was 20%] If new items added, change this */
 }
 
@@ -210,12 +210,353 @@ header div#menu .dropdownContent a:hover {
 main {
   min-height: 90vh; /* Note: 1vh ~= 1% viewport Height */
   /*background-color: green;*/
-  margin: 0px 10px;
+  margin: 0px 0px;
+  font-family: light;
 }
 
-main h1 {
+/* Use this to Center Items */
+main .container {
+  margin: 0% 20%;
+}
+
+main .title {
   margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  border-left: 0px;
+  font-family: bold;
+}
+
+/* This is the Navigator Bar */
+main nav {
+  background-color: #111111;
+  color: white;
+  margin: 0px;
+  padding: 5px 0px;
+}
+
+main nav span {
+  font-family: semibold;
+  font-size: 24px;
+  display: block;
+  float: left;
+  padding: 1px 10px 1px 1px;
+}
+
+main nav ul {
+  list-style-type: none;
+  display: inline;
+  margin: 0px;
+}
+
+main nav ul li {
+  padding: 1px 15px 1px 0px;
+  font-family: semibold;
+  color: gray;
+  display: inline-block;
+}
+
+main nav ul li * {
+  margin: 5px 0px;
+  padding: 0px;
+}
+
+/* May change the Link color at some point */
+main nav ul li a:link {
+  color: #BBE524;
+  text-decoration: none;
   
+}
+
+main nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header Decorations */
+main h1 {
+  margin: 10px 0px;
+  font-family: semibold;
+  border-left: 5px solid #333333;
+  padding: 1px 1px 1px 10px;
+}
+
+main h2 {
+  margin: 5px 0px;
+  font-family: semibold;
+  border-left: 5px solid #444444;
+  padding: 1px 1px 1px 10px;
+}
+
+main h3 {
+  margin: 5px 0px;
+  font-family: semibold;
+  border-left: 5px solid #555555;
+  padding: 1px 1px 1px 10px;
+}
+
+main h4 {
+  margin: 5px 0px;
+  font-family: semibold;
+  border-left: 5px solid #666666;
+  padding: 1px 1px 1px 10px;
+}
+
+main h5 {
+  margin: 5px 0px;
+  font-family: semibold;
+  border-left: 5px solid #777777;
+  padding: 1px 1px 1px 10px;
+}
+
+main h6 {
+  margin: 5px 0px;
+  font-family: semibold;
+  border-left: 5px solid #888888;
+  padding: 1px 1px 1px 10px;
+}
+
+main .invert {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+/* END Header Decorations */
+
+main p {
+  margin: 10px 0px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+main img.blur {
+  filter: blur(25px);
+  -webkit-filter: blur(25px);
+}
+
+main figure {
+  margin: 5px 0px;
+  padding: 0px;
+  background-color: #002C3D;
+  color: white;
+}
+
+main figure .figure {
+  color: gray;
+}
+
+main figure figcaption {
+  margin: 0px;
+  padding: 5px 5px 5px 20px;
+  font-family: ultralight;
+  border-left: 5px solid #004966;
+}
+
+main img.noresize {
+  width: auto;
+  height: auto;
+}
+
+/* For Code Displays */
+main pre {
+  margin: 0px 0px 0px 10px;
+  counter-reset: line; /* Counter used for Code */
+  border-left: 1px solid gray;
+  background-color:#eee;
+  border-left: 5px solid #2682A6;
+  margin: 5px 0px;
+  padding: 1em;
+  white-space: pre-wrap;
+  font-family: ultralight;
+  color: #2682A6; /* For anything not in the code */
+}
+
+main pre code {
+  counter-increment: line;
+  word-wrap: break-word;
+  padding: .5em;
+  font-family: light;
+  line-height: 1.5rem;
+  color: black;
+  background-color: transparent;
+}
+
+main pre code:before {
+  content: counter(line);
+  -webkit-user-select: none;
+  border-right: 1px solid #777;
+  color: #777;
+  display: inline-block;
+  padding:0 0.5em;
+  margin-right: .5em;
+}
+/* END Code Display Box */
+
+
+/* Text Sections */
+main div.ts {
+  background-color: white;
+  border-left: 5px solid gray;
+  margin: 5px 0px;
+  padding: 0.5em 0.5em 0.5em 1em; 
+}
+
+main div.ts p {
+  margin: 0px;
+}
+
+main div.ts h1 {
+  border-left: 0px;
+  color: gray;
+}
+
+main div.ts.note {
+  background-color: #F0F7D4;
+  border-color: #BBE524;
+}
+
+main div.ts.warn {
+  background-color: #fff9e6;
+  border-color: #ffc30f;
+}
+
+main div.ts.warn h1 {
+  color: #e6ac00;
+}
+
+main div.ts.err {
+  background-color: #ffe8e6;
+  border-color: #FF230F;
+}
+
+main div.ts.err h1 {
+  color: #FF230F;
+}
+/* END Text Sections */
+
+hr {
+  border-style: solid;
+  border-color: #999;
+  margin: 10px 0px;
+}
+
+/* Table Styling */
+main table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+main table caption {
+  text-align: left;
+  background-color: #555;
+  color: white;
+  font-family: light;
+  padding: 5px;
+  border-left: 5px solid #333;
+}
+
+main table thead {
+  border-left: 5px solid black;
+  color: white;
+}
+
+main table tfoot {
+  border-left: 5px solid #2682A6;
+}
+
+main table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+main table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+main table th {
+  background-color: #002C3D;
+  color: white;
+  padding: 5px;
+  font-family: menu;
+  font-size: 17.5px;
+}
+
+main table td {
+  font-family: light;
+  padding: 5px;
+}
+
+main table tr:hover {
+  background-color: #F0F7D4;
+}
+
+/* END Table Styling */
+
+code {
+  font-family: light;
+  background-color: transparent;
+}
+
+/* Details Tag */
+details {
+  /*border-left: 5px solid black;*/
+  background-color: rgba(0,0,0,1);
+  font-family: semibold;
+}
+
+/* Removes the Twisty Triangle */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  background-color: #eee;
+  color: black;
+}
+
+details[open] {
+  background-color: #eee;
+  color: black;
+}
+
+details[open] > *:not(summary) {
+  font-family: light;
+}
+
+details[open] summary {
+  background-color: black;
+  color: white;
+}
+
+/* END Details Tag */
+
+blockquote {
+  border-left: 5px solid #555555;
+  background-color: #eee;
+  margin: 0px;
+  padding: 1em 1em 1em 3em;
+  font-family: light;
+  font-style: italic;
+}
+
+abbr {
+  border-bottom: 2.5px solid #333;
+}
+
+a:link, a:visited {
+  color: #81a013;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #BBE524;
+  text-decoration: none;
 }
 
 /* Footer Block */
@@ -223,6 +564,7 @@ footer {
   background-color: #002C3D;
   box-shadow: 0px -5px 10px #555555;
   color: gray;
+  margin: 10px 0px 0px 0px;
 }
 
 footer div#footer-top {
